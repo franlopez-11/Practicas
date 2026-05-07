@@ -1,46 +1,105 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: grey;
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: lightgray;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
 }
 
 h2 {
     color: grey;
 }
 
-section {
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
 ul {
     list-style-type: square;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 5px;
+.contenedor-proyectos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 input[type="submit"] {
     background-color: grey;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
 }
 
 footer {
+    background-color: black;
+    color: white;
     text-align: center;
-    margin-top: 20px;
-    color: grey;
+    padding: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: lightgray;
 }

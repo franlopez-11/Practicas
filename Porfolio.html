@@ -2,11 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -14,51 +10,57 @@
 
     <header>
         <h1>Fran Lopez Lerma</h1>
-        <p>Soy un chico trabajador que se dedica a estudiar un ciclo superior de DAW y en verano suelo trabajar de fontanero</p>
+        <p>Soy un chico trabajador que se dedica a estudiar un ciclo superior de DAW y en verano suelo trabajar de fontanero.</p>
     </header>
 
-    <hr>
+    <nav>
+        <ul class="menu">
+            <li><a href="#datos">Datos personales</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <section>
+    <section id="datos">
         <h2>Datos personales</h2>
         <ul>
-            <li><strong>Edad:20</strong> </li>
-            <li><strong>Email:franymariajse@gmail.com</strong> </li>
-            <li><strong>Teléfono:605538911</strong> </li>
-            <li><strong>Ubicación:Moral de Calatrava</strong> </li>
+            <li><strong>Edad:</strong> 20</li>
+            <li><strong>Email:</strong> franymariajse@gmail.com</li>
+            <li><strong>Teléfono:</strong> 605538911</li>
+            <li><strong>Ubicación:</strong> Moral de Calatrava</li>
         </ul>
     </section>
 
-    <hr>
-
-    <section>
+    <section id="experiencia">
         <h2>Experiencia</h2>
+
         <article>
             <h3>Trabajo</h3>
-            <p>He trabajado de fontanero 4 veranos</p>
+            <p>He trabajado de fontanero 4 veranos.</p>
         </article>
 
         <article>
-            <h3>Trabajo</h3>
-            <p>3 meses de praciticas en la empresa NOOS Solutions</p>
+            <h3>Prácticas</h3>
+            <p>3 meses de prácticas en la empresa NOOS Solutions.</p>
         </article>
     </section>
 
-    <hr>
-
-    <section>
+    <section id="educacion">
         <h2>Educación</h2>
+
         <article>
             <h3>Estudios</h3>
-            <p>Educacion Secundaria Obligatoria</p>
+            <p>Educación Secundaria Obligatoria</p>
             <p>Grado Medio de SMR</p>
         </article>
     </section>
 
-    <hr>
-
-    <section>
+    <section id="habilidades">
         <h2>Habilidades</h2>
+
         <ul>
             <li>Trabajador</li>
             <li>Constante con mi trabajo</li>
@@ -66,31 +68,57 @@
         </ul>
     </section>
 
-    <hr>
+    <section id="proyectos">
+        <h2>Proyectos futuros</h2>
 
-    <section>
+        <div class="contenedor-proyectos">
+
+            <div class="proyecto">
+                <h3>Página web de empresa</h3>
+                <p>Me gustaría crear una página web profesional para una empresa local.</p>
+            </div>
+
+            <div class="proyecto">
+                <h3>Aplicación de gestión</h3>
+                <p>Desarrollar una aplicación para organizar tareas y clientes.</p>
+            </div>
+
+            <div class="proyecto">
+                <h3>Tienda online</h3>
+                <p>Crear una tienda online moderna y funcional.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacto">
         <h2>Contacto</h2>
+
         <form>
-            <label>Nombre:</label><br>
-            <input type="text" name="nombre"><br><br>
 
-            <label>Email:</label><br>
-            <input type="email" name="email"><br><br>
+            <label>Nombre:</label>
+            <input type="text" name="nombre">
 
-            <label>Mensaje:</label><br>
-            <textarea name="mensaje"></textarea><br><br>
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Mensaje:</label>
+            <textarea name="mensaje"></textarea>
 
             <input type="submit" value="Enviar">
+
         </form>
     </section>
 
-    <hr>
-
     <footer>
         <p>© 2026 Fran Lopez Lerma</p>
+
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
     </footer>
 
 </body>
 </html>
-
-</head>
